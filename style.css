@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse; /* Merge adjacent borders */
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid black; /* Border around each cell */
+    padding: 0; /* No padding */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Same height as width */
+    text-align: center; /* Center the text horizontally */
+    vertical-align: middle; /* Center the text vertically */
+}
+
+td{
+    cursor: pointer;
+}
+td:hover{
+    background-color: lightgray;
+}
+
+/* Borders for 3x3 subgrids */
+td:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 3px solid black;
+}
+
+td:first-child {
+    border-left: 3px solid black;
+}
+
+tr:first-child td {
+    border-top: 3px solid black;
+}
+
+/* Error highlight border */
+.error-highlight {
+    background-color: red;
+}
